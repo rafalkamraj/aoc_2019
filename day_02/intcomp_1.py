@@ -98,7 +98,6 @@ def findMagicFaster( magic, program ):
 def findILessThanMagic( magic, program, iterations_list ):
     start = 1
     end = 99
-    i = 0
     while( start < end ):
         i = ( start + end ) // 2
         iterations_list[0] += 1
@@ -109,7 +108,6 @@ def findILessThanMagic( magic, program, iterations_list ):
             start = i + 1
         else:
             end = i
-
     return start
 
 def findJLessThanMagic( magic, program, iterations_list ):
@@ -130,7 +128,6 @@ def findJLessThanMagic( magic, program, iterations_list ):
 def findIGreaterThanMagic( magic, program, start_i, j, iterations_list ):
     start = start_i
     end = 99
-    i = 0
     while( start < end ):
         i = ( start + end ) // 2
         iterations_list[0] += 1
@@ -146,7 +143,6 @@ def findIGreaterThanMagic( magic, program, start_i, j, iterations_list ):
 def findJGreaterThanMagic( magic, program, start_j, i, iterations_list ):
     start = start_j
     end = 99
-    j = 0
     while( start < end ):
         j = ( start + end ) // 2
         iterations_list[0] += 1
