@@ -107,7 +107,7 @@ def findILessThanMagic( magic, program, iterations_list ):
         if( result[0] < magic ):
             start = i + 1
         else:
-            end = i
+            end = i - 1
     return start
 
 def findJLessThanMagic( magic, program, iterations_list ):
@@ -122,7 +122,7 @@ def findJLessThanMagic( magic, program, iterations_list ):
         if( result[0] < magic ):
             start = j + 1
         else:
-            end = j
+            end = j - 1
     return start
 
 def findIGreaterThanMagic( magic, program, start_i, j, iterations_list ):
@@ -137,7 +137,7 @@ def findIGreaterThanMagic( magic, program, start_i, j, iterations_list ):
         if( result[0] > magic ):
             end = i - 1
         else:
-            start = i
+            start = i + 1
     return end
 
 def findJGreaterThanMagic( magic, program, start_j, i, iterations_list ):
@@ -152,7 +152,7 @@ def findJGreaterThanMagic( magic, program, start_j, i, iterations_list ):
         if( result[0] > magic ):
             end = j - 1
         else:
-            start = j
+            start = j + 1
     return end
 
 
